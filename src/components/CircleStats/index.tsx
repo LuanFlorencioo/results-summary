@@ -1,9 +1,9 @@
-import { useDataContext } from "@/contexts";
+import data from "@/data";
 
 const CircleStats = () => {
-  const { memory, reaction, verbal, visual } = useDataContext();
+  const sumData = data.reduce((p, c) => p + c.quantity, 0);
 
-  const result = (memory + reaction + verbal + visual) / 4;
+  const result = sumData / data.length;
 
   return (
     <div className="w-[120px] h-[120px] rounded-full bg-gradient-to-b from-gradient-circle-100 to-gradient-circle-200 flex flex-col items-center justify-center">
