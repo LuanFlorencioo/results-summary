@@ -14,10 +14,22 @@ module.exports = {
           "200": "#C8C7FF",
           "300": "#EBF1FF",
         },
-        red: "#FF5757",
-        yellow: "#FFB01F",
-        green: "#00BD91",
-        blue: "#1125D4",
+        red: {
+          strong: "#FF5757",
+          low: "#FF575710"
+        },
+        yellow: {
+          strong: "#FFB01F",
+          low: "#FFB01F10"
+        },
+        green: {
+          strong: "#00BD91",
+          low: "#00BD9110"
+        },
+        blue: {
+          strong: "#1125D4",
+          low: "#1125D410"
+        },
         gradient: {
           card: {
             "100": "#7857FF",
