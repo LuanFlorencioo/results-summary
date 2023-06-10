@@ -20,7 +20,7 @@ const Hability = ({ title, value, color }: iHability) => {
   }
 
   return (
-    <div className={`w-full p-5 ${setBackground[color]} rounded-lg flex justify-between items-center gap-6`}>
+    <div className={`w-full p-5 ${setBackground[color]} rounded-lg flex justify-between items-center gap-6 md:p-3`}>
       <h3 className={`text-sm font-medium ${setTextColor[color]}`}>
         {title}
       </h3>
